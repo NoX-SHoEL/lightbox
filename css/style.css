@@ -1,0 +1,69 @@
+* {
+    font-family: 'Lacquer', sans-serif;
+}
+
+body {
+    font:  18px/36px 'Lacquer', sans-serif;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container {
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0 , .3);
+    border-radius: 5px;
+}
+
+.galery li, .galery li img, .galery li span {
+    border-radius: 50%;
+}
+
+.galery li img {
+    width: 120px;
+    height: 120px;
+}
+
+.galery li {
+    width: 120px;
+    height: 120px;
+    /* overflow: hidden; */
+    border: 3px solid #666;
+    float: left;
+    margin-right: 10px;
+    margin-left: 12px;
+    position: relative;
+}
+
+.galery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: rgba(200, 200, 200, .5);
+    line-height: 190px;
+    color: red;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0) rotate(0);
+}
+
+.galery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
