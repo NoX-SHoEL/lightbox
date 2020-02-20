@@ -23,20 +23,20 @@ h1 {
     border-radius: 5px;
 }
 
-.galery li, .galery li img, .galery li span {
+.galery .item, .galery li span {
     border-radius: 50%;
 }
 
 .galery li img {
     width: 120px;
     height: 120px;
+    border: 3px solid #666;
 }
 
 .galery li {
     width: 120px;
     height: 120px;
     /* overflow: hidden; */
-    border: 3px solid #666;
     float: left;
     margin-right: 10px;
     margin-left: 12px;
@@ -45,8 +45,8 @@ h1 {
 
 .galery li span {
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 125px;
+    height: 125px;
     position: absolute;
     top: 0;
     text-align: center;
@@ -66,4 +66,24 @@ h1 {
 
 .clear {
     clear: both;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0 , 0);
+    z-index: 99999;
+    transition: 0.3s;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0 , .8);
 }
